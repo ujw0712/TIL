@@ -38,8 +38,8 @@ function solution(numbers, hand) {
     if (y === 0) setLeft(n)
     if (y === 2) setRight(n)
     if (y === 1) {
-      disLeft = Math.abs(x-leftPox[0]) + Math.abs(y-leftPox[1])
-      disRight = Math.abs(x-rightPox[0]) + Math.abs(y-rightPox[1])
+      const disLeft = Math.abs(x-leftPox[0]) + Math.abs(y-leftPox[1])
+      const disRight = Math.abs(x-rightPox[0]) + Math.abs(y-rightPox[1])
       if (disLeft < disRight || (disLeft === disRight && hand === 'left'))  setLeft(n)
       if (disLeft > disRight || (disLeft === disRight && hand === 'right')) setRight(n)
     }
